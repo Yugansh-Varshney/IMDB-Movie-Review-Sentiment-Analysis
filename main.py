@@ -10,7 +10,7 @@ word_index = imdb.get_word_index()
 reverse_word_index = {value: key for key, value in word_index.items()}
 
 # Load your pre-trained model
-model = load_model('simpleRNN_IMDB.h5')
+model = load_model("simpleRNN_IMDB.keras")
 
 # Utility: decode integer-encoded review
 def decode_review(encoded_review):
